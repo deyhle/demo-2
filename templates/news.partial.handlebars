@@ -8,7 +8,7 @@
               <ul class="nav nav-tabs nav-stacked">
 
                 {{#each _embedded.6f50736a:news}}
-                  <li class=""><a href="#tab{{@index}}" data-toggle="tab" class="analistic-01">{{teaserTitle}}</a></li>
+                  <li class="{{#if @first}}active{{/if}}"><a href="#tab{{@index}}" data-toggle="tab" class="analistic-01">{{teaserTitle}}</a></li>
                 {{/each}}
               </ul>
             </div>
