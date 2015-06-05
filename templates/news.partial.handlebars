@@ -8,7 +8,7 @@
               <ul class="nav nav-tabs nav-stacked">
 
                 {{#each _embedded.6f50736a:news}}
-                  <li class=""><a href="#tab{{@index}}" data-toggle="tab" class="analistic-01">Responsive Web Design</a></li>
+                  <li class=""><a href="#tab{{@index}}" data-toggle="tab" class="analistic-01">{{teaserTitle}}</a></li>
                 {{/each}}
               </ul>
             </div>
@@ -22,7 +22,7 @@
                       </div>
                       <div class="media-body">
                         <h2>{{mainTitle}}</h2>
-                        <p>{{mainText}}</p>
+                        <p>{{{mainText}}}</p>
                       </div>
                     </div>
                   </div>
