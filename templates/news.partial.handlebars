@@ -15,7 +15,7 @@
             <div class="parrent media-body">
               <div class="tab-content">
                 {{#each _embedded.6f50736a:news}}
-                  <div class="tab-pane fade" id="tab{{@index}}">
+                  <div class="tab-pane fade {{#if @first}}active{{/if}}" id="tab{{@index}}">
                     <div class="media">
                       <div class="pull-left">
                         <img class="img-responsive" src="{{teaserImage}}">
