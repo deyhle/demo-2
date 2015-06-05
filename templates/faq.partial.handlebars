@@ -12,7 +12,7 @@
           <div class="panel-group" id="accordion1">
             {{#each _embedded.6f50736a:faq}}
               <div class="panel panel-default">
-                <div class="panel-heading active">
+                <div class="panel-heading {{#if @first}}active{{/if}}">
                   <h3 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
                         {{question}}
