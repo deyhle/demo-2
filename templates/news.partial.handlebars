@@ -1,0 +1,44 @@
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 wow fadeInDown">
+        <div class="tab-wrap">
+          <div class="media">
+            <div class="parrent pull-left">
+              <ul class="nav nav-tabs nav-stacked">
+
+                {{#each _embedded.6f50736a:news}}
+                  <li class=""><a href="#tab{{@index}}" data-toggle="tab" class="analistic-01">Responsive Web Design</a></li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="parrent media-body">
+              <div class="tab-content">
+                {{#each _embedded.6f50736a:news}}
+                  <div class="tab-pane fade" id="tab{{@index}}">
+                    <div class="media">
+                      <div class="pull-left">
+                        <img class="img-responsive" src="{{teaserImage}}">
+                      </div>
+                      <div class="media-body">
+                        <h2>{{mainTitle}}</h2>
+                        <p>{{mainText}}</p>
+                      </div>
+                    </div>
+                  </div>
+                {{/each}}
+              </div>
+              <!--/.tab-content-->
+            </div>
+            <!--/.media-body-->
+          </div>
+          <!--/.media-->
+        </div>
+        <!--/.tab-wrap-->
+      </div>
+      <!--/.col-sm-6-->
+    </div>
+    <!--/.row-->
+  </div>
+  <!--/.container-->
+</section><!--/#content-->
