@@ -374,6 +374,8 @@ input.search-form:hover {
 
 #main-slider .carousel .carousel-content {
   margin-top: 150px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 1em 1em 1em 2em;
 }
 
 #main-slider .carousel .slide-margin{
