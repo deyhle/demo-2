@@ -28,7 +28,7 @@
 
 <body class="homepage">
 
-<header id="header">
+<header id="header"><!--
   <div class="top-bar">
     <div class="container">
       <div class="row">
@@ -36,34 +36,27 @@
         </div>
         <div class="col-sm-6 col-xs-8">
           <div class="social">
-            <ul class="social-share">
-              <li><a href="https://www.facebook.com/{{fb_id}}"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://plus.google.com/{{google_id}}/posts"><i class="fa fa-google"></i></a></li>
-            </ul>
-            <div class="search">
-              <form role="form">
-                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                <i class="fa fa-search"></i>
-              </form>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <!--/.container-->
-  </div>
+    /.container
+  </div>-->
   <!--/.top-bar-->
 
   <nav class="navbar navbar-inverse" role="banner">
     <div class="container">
       <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">
+          <img src="{{logo}}" alt="logo" width="80" />
+          <span style="color:white; font-size: 24px; margin-left: 25px;">{{websiteTitle}}</span>
+        </a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="{{logo}}" alt="logo" width="150"></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right">
@@ -73,6 +66,12 @@
                 <div style="text-transform: uppercase;">{{navTitle}}</div>
               </a></li>
             {{/each}}
+          <li>
+            <ul class="social-share">
+              <li><a href="https://www.facebook.com/{{fb_id}}"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://plus.google.com/{{google_id}}/posts"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>

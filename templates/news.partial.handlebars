@@ -7,22 +7,22 @@
             <div class="parrent pull-left">
               <ul class="nav nav-tabs nav-stacked">
 
-                {{#each _embedded.6f50736a:news}}
-                  <li class="{{#if @first}}active{{/if}}"><a href="#tab{{@index}}" data-toggle="tab" class="analistic-01">{{teaserTitle}}</a></li>
+                {{#each _embedded.6f50736a:articles}}
+                  <li class="{{#if @first}}active{{/if}}"><a href="#tab{{@index}}" data-toggle="tab" class="analistic-01">{{title}}</a></li>
                 {{/each}}
               </ul>
             </div>
             <div class="parrent media-body">
               <div class="tab-content">
-                {{#each _embedded.6f50736a:news}}
+                {{#each _embedded.6f50736a:articles}}
                   <div class="tab-pane fade {{#if @first}}active in{{/if}}" id="tab{{@index}}">
                     <div class="media">
                       <div class="pull-left">
-                        <img class="img-responsive" src="{{teaserImage}}">
+                        <img class="img-responsive" src="https://f.entrecode.de/{{coverImage}}">
                       </div>
-                      <div class="media-body">
-                        <h2>{{mainTitle}}</h2>
-                        <p>{{{mainText}}}</p>
+                      <div class="media-body" style="clear: both;">
+                        <h2 style="margin-top:25px;">{{title}}</h2>
+                        <p>{{{text}}}</p>
                       </div>
                     </div>
                   </div>
